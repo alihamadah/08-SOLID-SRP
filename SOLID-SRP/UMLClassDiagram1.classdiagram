@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="60eeafe3-e917-48d0-b037-f74caa087ce3" name="UMLClassDiagram1" linkedPackageId="02da6b15-b594-4700-87dd-d2bfbb21a814" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="0a8aa4f4-c43c-4432-adab-09e5befee2d4">
+      <profileInstance Id="e5506438-f5ee-4397-b707-983b95e15c3d" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="488a3c2e-cbff-45e5-aaf1-49e2a4278085">
+      <profileInstance Id="928bd2a3-47d4-4e73-9b92-c40c2110ae67" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e963a84d-a306-42ee-9ee3-dde017c80df7" name="Employee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67276a33-ea81-474f-9848-9e574573add5" />
+        <ownedAttributesInternal>
+          <property Id="e1bede04-c69f-4ed6-b285-5019b7391668" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="52487832-d9ce-4bc0-974d-3e2b2f4b329a" />
+          </property>
+          <property Id="51aedf37-38e8-4565-93c9-addcbe318480" name="SSN" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4aa5b620-58e0-4879-bfcb-de9e01d839a4" />
+          </property>
+          <property Id="2b30bcdf-83d5-41a4-846a-6561e8ffa80a" name="YearsInService" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b64d63e7-0a34-4631-aaca-2d9b5479316f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="92374d0b-706e-4cb4-8b06-2b2810910159" name="CalculatePay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c95c690e-443c-4633-b6a3-d21e3d3eebe7" />
+          </operation>
+          <operation Id="ba9ed39a-24ac-4c33-a8bd-be56a3fe67e0" name="PrintReport" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d594ccce-be77-410f-9509-52b4fc74b8dc" />
+          </operation>
+          <operation Id="93d095c0-a7e8-4d95-acf9-61499513f72e" name="SaveEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ceec947e-363d-47a8-8a50-714ba5821f37" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="02da6b15-b594-4700-87dd-d2bfbb21a814" name="SOLID-SRP">
+    <elementDefinition Id="e1bf2f2e-750d-430c-ade2-320e3e6b1df5" />
+  </package>
+</logicalClassDesignerModel>
