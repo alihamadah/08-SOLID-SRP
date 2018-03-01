@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="60eeafe3-e917-48d0-b037-f74caa087ce3" name="UMLClassDiagram1" linkedPackageId="02da6b15-b594-4700-87dd-d2bfbb21a814" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="0a8aa4f4-c43c-4432-adab-09e5befee2d4">
-      <profileInstance Id="e5506438-f5ee-4397-b707-983b95e15c3d" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="488a3c2e-cbff-45e5-aaf1-49e2a4278085">
-      <profileInstance Id="928bd2a3-47d4-4e73-9b92-c40c2110ae67" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="e963a84d-a306-42ee-9ee3-dde017c80df7" name="Employee" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -29,15 +15,52 @@
             <elementDefinition Id="b64d63e7-0a34-4631-aaca-2d9b5479316f" />
           </property>
         </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3370bb0d-94b6-4318-bd40-914de2913f5b" name="CalculatethePay" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a76d84cc-692d-42c6-b254-2add3bc2e6a4" />
+        <generalsInternal>
+          <generalization Id="4caf0a56-bf97-4409-a511-c90a7c3477df" isSubstitutable="false">
+            <classMoniker Id="e963a84d-a306-42ee-9ee3-dde017c80df7" LastKnownName="Employee" />
+            <elementDefinition Id="b5d858f0-bb68-4c89-9083-f5542760d6e5" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="92374d0b-706e-4cb4-8b06-2b2810910159" name="CalculatePay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="c95c690e-443c-4633-b6a3-d21e3d3eebe7" />
+          <operation Id="c4333e08-135e-4340-abdd-c64b2e2fb807" name="CalculatePay" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="16f67c39-80ca-4ec6-b3a5-6b6d06ee0bbd" />
           </operation>
-          <operation Id="ba9ed39a-24ac-4c33-a8bd-be56a3fe67e0" name="PrintReport" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="d594ccce-be77-410f-9509-52b4fc74b8dc" />
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="227eeafb-3c11-49e1-87d7-a3916dc88e55" name="PrintingtheReport" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="33a3ab94-2889-418a-8bbe-9b1b2c1ae2fa" />
+        <generalsInternal>
+          <generalization Id="b17b420d-1726-48aa-aff2-13da3e3077ef" isSubstitutable="false">
+            <classMoniker Id="e963a84d-a306-42ee-9ee3-dde017c80df7" LastKnownName="Employee" />
+            <elementDefinition Id="edbda63b-cf9e-4378-b116-47c546199c30" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="99b9eeea-5daa-4f26-8823-f5c3546cb371" name="PrintReport" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c0581c27-1467-4404-a4f7-020aba67828d" />
           </operation>
-          <operation Id="93d095c0-a7e8-4d95-acf9-61499513f72e" name="SaveEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ceec947e-363d-47a8-8a50-714ba5821f37" />
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9b215df4-d00d-4919-b95d-36d57cd6d44f" name="SavingtheEmployee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a481712d-e9a5-44ff-9e9a-da0ed7020f3b" />
+        <generalsInternal>
+          <generalization Id="08903dc9-6e43-406a-b855-d4fbedd2e7d1" isSubstitutable="false">
+            <classMoniker Id="e963a84d-a306-42ee-9ee3-dde017c80df7" LastKnownName="Employee" />
+            <elementDefinition Id="2ba77410-92c2-4297-9237-557a6044c402" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="db9fa047-a4ed-46eb-8cc6-44d6b11ff63b" name="SaveEmployee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="952f91f3-e141-4eab-9ddb-73976db5cb40" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -45,5 +68,19 @@
   </packagedElements>
   <package Id="02da6b15-b594-4700-87dd-d2bfbb21a814" name="SOLID-SRP">
     <elementDefinition Id="e1bf2f2e-750d-430c-ade2-320e3e6b1df5" />
+    <profileInstances>
+      <packageHasProfileInstances Id="0a8aa4f4-c43c-4432-adab-09e5befee2d4">
+        <profileInstance Id="e5506438-f5ee-4397-b707-983b95e15c3d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="488a3c2e-cbff-45e5-aaf1-49e2a4278085">
+        <profileInstance Id="928bd2a3-47d4-4e73-9b92-c40c2110ae67" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

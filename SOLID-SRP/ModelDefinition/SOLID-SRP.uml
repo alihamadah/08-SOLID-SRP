@@ -60,25 +60,86 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a76d84cc-692d-42c6-b254-2add3bc2e6a4"
+        name="CalculatethePay"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b5d858f0-bb68-4c89-9083-f5542760d6e5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="67276a33-ea81-474f-9848-9e574573add5"
+              LastKnownName="Employee"
+              LastKnownLocation="SOLID-SRP.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation
-            Id="c95c690e-443c-4633-b6a3-d21e3d3eebe7"
+            Id="16f67c39-80ca-4ec6-b3a5-6b6d06ee0bbd"
             name="CalculatePay"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="33a3ab94-2889-418a-8bbe-9b1b2c1ae2fa"
+        name="PrintingtheReport"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="edbda63b-cf9e-4378-b116-47c546199c30"
+            isSubstitutable="false">
+            <classMoniker
+              Id="67276a33-ea81-474f-9848-9e574573add5"
+              LastKnownName="Employee"
+              LastKnownLocation="SOLID-SRP.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
           <operation
-            Id="d594ccce-be77-410f-9509-52b4fc74b8dc"
+            Id="c0581c27-1467-4404-a4f7-020aba67828d"
             name="PrintReport"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a481712d-e9a5-44ff-9e9a-da0ed7020f3b"
+        name="SavingtheEmployee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2ba77410-92c2-4297-9237-557a6044c402"
+            isSubstitutable="false">
+            <classMoniker
+              Id="67276a33-ea81-474f-9848-9e574573add5"
+              LastKnownName="Employee"
+              LastKnownLocation="SOLID-SRP.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
           <operation
-            Id="ceec947e-363d-47a8-8a50-714ba5821f37"
+            Id="952f91f3-e141-4eab-9ddb-73976db5cb40"
             name="SaveEmployee"
             isLeaf="false"
             isStatic="false"
@@ -87,6 +148,230 @@
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fe45b2cc-58f9-414b-bed9-74cdf70bb4b4"
+        name="GUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="efbab61c-26d3-4c5b-9e35-b8160c1486e8"
+        name="Graphical Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="73eee23f-cb5f-456a-af5f-c79e1ab550f1">
+            <classMoniker
+              Id="fe45b2cc-58f9-414b-bed9-74cdf70bb4b4"
+              LastKnownName="GUI"
+              LastKnownLocation="SOLID-SRP.uml" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="846e8568-e4c4-42fe-ac42-1463fc4b2b1a"
+        name="Rectangle"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="33c03ca3-1e86-41bb-b8fc-5d43599b4e80">
+            <classMoniker
+              Id="fe45b2cc-58f9-414b-bed9-74cdf70bb4b4"
+              LastKnownName="GUI"
+              LastKnownLocation="SOLID-SRP.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="2cbe7e95-6ba6-42b2-b8d3-a1303da0afb6"
+            isDerived="false"
+            sourceEndRoleName="Rectangle"
+            targetEndRoleName="GeoRectangle"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="91b39cec-5cfe-4e1b-b64f-2b9fc9a58475"
+              LastKnownName="GeoRectangle"
+              LastKnownLocation="SOLID-SRP.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="378e49c8-db4a-4280-9bbf-f26f1b872744"
+                  name="Rectangle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04e3b50d-5742-4d52-9ba0-f3468a651ec5"
+                  name="GeoRectangle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="aa01a4f9-229c-4f33-b6e5-e59cd097b18b"
+            isDerived="false"
+            sourceEndRoleName="Rectangle"
+            targetEndRoleName="Graphical Application"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="efbab61c-26d3-4c5b-9e35-b8160c1486e8"
+              LastKnownName="Graphical Application"
+              LastKnownLocation="SOLID-SRP.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5433d2f0-b72d-4c75-9f9a-4f2d40008e9d"
+                  name="Rectangle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f610556-4cb7-4c1c-8b86-15d997eba093"
+                  name="Graphical Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="fa5a6c90-19e8-415c-a23e-1a49ac585cb3"
+            name="draw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="09cc1b22-9986-4a39-adec-d67e109b9745"
+        name="Computational_Geometry_Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="005fa5ac-3158-4801-b748-699c4d09029b"
+            isDerived="false"
+            sourceEndRoleName="Computational_Geometry_Application"
+            targetEndRoleName="GeoRectangle"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="91b39cec-5cfe-4e1b-b64f-2b9fc9a58475"
+              LastKnownName="GeoRectangle"
+              LastKnownLocation="SOLID-SRP.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d80c7984-4a86-4def-9f73-3d1a01b5f937"
+                  name="Computational_Geometry_Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f50eb4ce-5a6d-451e-a871-cd0443625287"
+                  name="GeoRectangle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="91b39cec-5cfe-4e1b-b64f-2b9fc9a58475"
+        name="GeoRectangle"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="171e8020-f901-4890-be09-e9c5e98c353d"
+            name="area"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2eb5451e-5e95-46cf-a372-84a803bf2cba"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cf244373-627e-420b-b864-b8cc74260420"
+                      LastKnownName="double"
+                      LastKnownLocation="SOLID-SRP.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cf244373-627e-420b-b864-b8cc74260420"
+        name="double" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

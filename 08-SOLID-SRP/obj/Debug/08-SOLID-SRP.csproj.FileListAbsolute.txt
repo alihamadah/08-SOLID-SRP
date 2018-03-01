@@ -1,0 +1,2 @@
+c:\users\jvalenzu\documents\visual studio 2015\Projects\08-SOLID-SRP\08-SOLID-SRP\bin\Debug\08-SOLID-SRP.exe.config
+C:\Users\Lunar\Source\Repos\AlhamadahAli-course-work\AlhamadahAli-course-work\08-SOLID-SRP\08-SOLID-SRP\bin\Debug\08-SOLID-SRP.exe.config
